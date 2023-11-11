@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth">
+    <head style="margin: 0">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rmti-one-quote.css" />
+        <title>Contact the Cnqueror</title>
+        <link rel="icon" type="image/x-icon" href="theConqueror.png">
+        <script>
+            var myVar;
+
+            function load() {
+            myVar = setTimeout(showPage, 3500);
+             }
+
+            function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            }
+            function copy(tag) {
+                var copiedText = document.getElementById(tag.value);
+                navigator.clipboard.writeText(copiedText.innerHTML);
+                alert("Copied to Clipboard: " + copiedText.innerHTML);
+            }
+        </script>
+    </head>
+    <body onload="load()" style="margin: 0;">
+        <div id="mainContent">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div id="resizeNotice">⚠  Warning!
+                <p style="margin-top: 0; font-size: 15px;">Webpage not designed for screen of this size. To avoid malfunctions, Please SHRINK Window.</p>
+            </div>
+            <!--Utility Bar-->
+            <div class="menu">
+                <a href="index.html" class="menu-widget" style="width: 100vw; font-size: calc(15px + 0.5vw);" onclick="scrollToTop()">Back to Home</a>
+            </div>
+
+            <div class="formBanner">
+                <h1 style="border-radius: 10px;font-weight: normal; font-family: monospace; font-size: calc(15px + 0.5vw); background-color: white; border-bottom: 10px solid rgb(134, 129, 73); padding: 10px; margin-left: 25vw; margin-right: 25vw;">Let's get to know you better, if you choose to fill out this form I'll be in contact with you soon! Or, you can contact me using my details on my home page.</h1>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_4d_W9NcZ4lZ8JjiQT3zV511JG3_TxoxSHqCddGmZcJ5QlA/viewform?embedded=true" width="50%" height="1500px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            
+
+            <div id="footer-notice">Big W the Conqueror
+                <p style="margin-top: 0; font-size: 15px;">I hope you enjoyed discovering my work. This webstite is designed to allow you to contact this practicioner. Apologies if it is not displaying correctly, please consider using a different device or resizing the screen.</p>
+            </div>
+        </div>
+    </body>
+</html>

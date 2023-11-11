@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth">
+    <head style="margin: 0">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rmti-one-quote.css" />
+        <title>William the Conqueror</title>
+        <link rel="icon" type="image/x-icon" href="theConqueror.png">
+        <script>
+            function scrollToContactDetails() {
+                window.scrollTo(0, 3000);
+            }
+            function scrollToInfo() {
+                document.getElementById("infoScrollPoint").scrollIntoView();
+            }
+            function scrollToCustomerFeedback() {
+                document.getElementById("customerScrollPoint").scrollIntoView();
+            }
+            function scrollToTop() {
+                window.scrollTo(0, 0);
+            }
+            var myVar;
+
+            function load() {
+            myVar = setTimeout(showPage, 3500);
+             }
+
+            function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            }
+            function copy(tag) {
+                var copiedText = document.getElementById(tag.value);
+                navigator.clipboard.writeText(copiedText.innerHTML);
+                alert("Copied to Clipboard: " + copiedText.innerHTML);
+            }
+        </script>
+    </head>
+    <body onload="load()" style="margin: 0;">
+        <div id="mainContent">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div id="resizeNotice">⚠  Warning!
+                <p style="margin-top: 0;">Webpage not designed for screen of this size. To avoid malfunctions, Please SHRINK Window.</p>
+            </div>
+            <!--Utility Bar-->
+            <div class="menu">
+                <div></div>
+                <a target="_blank" href="https://www.reddit.com/r/CrusaderKings/comments/is1c01/best_way_to_conquer_england/" style="padding: 0.75vw;" class="menu-image">
+                    <img src="theConqueror.png" alt="LOGO" 
+                    style="background-color: whitesmoke; min-height: 15px; height: 3.5vw; margin: 0; padding: 0;"></a>
+                <a class="menu-widget" onclick="scrollToTop()">Home</a>
+                <a class="menu-widget" onclick="scrollToInfo()">Information</a>
+                <a class="menu-widget" onclick="scrollToCustomerFeedback()">Fan Quote</a>
+                <a class="menu-widget" onclick="scrollToContactDetails()">Contact Me</a>
+                <!-- <a class="menu-widget"><img height="30px" src="ClaireRMTI.jpg" alt="idkrlly"></a> -->
+            </div>
+            
+            <!--Introduction Section-->
+        <div class="banner" style="position: relative;">
+            <div class="drop-down" style="text-align: left;" id="introBox">
+                <p style="text-decoration: underline; font-size:calc(20px + 0.4vw); margin: 0; margin-top: 10px; margin-left: 40px;">William the Conqueror
+                <p style="margin-top: 0.5vw; margin-left: 15px; margin-right: 15px; margin-bottom: 5px;">Hi, I'm Will, but you can call me Guillaume le Conquérant. I've been seiging England like Rollo in Paris. A proud descendant, bigger than Hugh Capet. The official duke since 1065.</p>  
+                </p>
+            </div>
+            <div class="flip-box" style="min-height: 200px; min-width: 250px;">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 style="font-size:calc(18px + 1.5vw);">Did You Know?</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p class="flip-box-back-heading">Our Workplace</p>
+                        <p class="flip-box-back-paragraph">Here we strive to nurture an inclusive Norman army. We're the originals. Been breaking the Geneva convention before it was even cool.</p>
+                    </div>
+                <div style="top: 50%;position:absolute; width: 10px; height: 10px;"id="infoScrollPoint"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Banner -->
+        <div class="profileBanner">
+            <div>
+                <img src="theConqueror.png" style="height: calc(250px + 10vw); border: 10px solid rgb(134, 129, 73); transition-duration: 0.5; border-radius: 9000px; background-color: #FFFFC4;">
+                <p style="font-size: calc(15px + 0.3vw); font-family: monospace; font-weight: bold; line-height: 30px;">Guiliame of Normandy<br/>Average Conquest Enjoyer</p>
+            </div>
+        </div>
+        <!--Further Information Section-->
+        <div class="background-image" id="infoSection">
+            <div class="drop-down-info" id="customerBox">
+                <p id="infoTitle" style="text-decoration: underline; font-size:calc(16px + 0.5vw); margin: 0; text-align: center;  left: 25%; margin-top: 20px;">Get to Know Me</p>
+                <div style="margin-left: 25px; margin-right: 25px;">
+                <p style="margin-top: 0.5vw;"><br/><b>Conquering since '66</b><br><br/>
+I'm an expierienced conqueror with a passion for taxing peasants. With over 20 years in the industry, I'm now a trusted consultant in areas such as:<ul>
+    <li>rebellion mitigation</li>
+    <li>freedoms of Anglo-Saxon women</li>
+    <li>Catholisism</li>
+    <li>castle building</li></ul></p>
+<p style="margin-top: 0.5vw; margin-left: 25px; margin-right: 25px;"></p><br><b style="margin-left: 30px;">My Wiki</b><br/><br/>
+What does the fountain of knowledge say about me? William the Conqueror (c. 14 October 1027– 9 September 1087), also known as William I of England, was a Norman statesman and warlord. He was the first Norman King of England (1066–1087). He was also the Duke of Normandy from 1035 until his death.
+
+Every monarch of England and later the United Kingdom is directly descended from William.
+
+At the Battle of Hastings, William defeated Harold Godwinson, the last Anglo-Saxon king of England. That event is shown on the Bayeux Tapestry. He changed the course of both Norman and English history. He and Harold fought to see who would have the English throne. Harold was killed at the battle of Hastings in 1066.</p>
+<p style="margin-top: 0.5vw; margin-left: 25px; margin-right: 25px;"></p><br><b style="margin-left: 30px;">Company Reference</b><br/><br/>
+Below is a reference from my previous unpaid employees: <br/><br/><p style="font-style: italic; max-width: 75%;">"I've persecuted the natives of England beyond all reason, whether gentle or simple. I have cruelly oppressed them and unjustly disinherited them, killed innumerable multitudes by famine or the sword and become the barbarous murderer of many thousands both young and old of that fine race of people."</p></p>
+<p style="margin-top: 0.5vw; margin-left: 25px; margin-right: 25px;"></p><br><b style="margin-left: 30px;">Looking to the Future</b><br/><br/>
+After absolutley clarting the English, the Norman army must look to the future of the industry, searching for new ways to inovate. Though it is impossible to know what effects rapidly expanding open-source AI will have on the numerous IT and HR-related roles within the company, one thing can be certain. That we will uphold our original ethos of sustainability and growth with customer satisfaction at the forefront of our services.<br/><br/>Harold gets the whole squad laughing every time XD</p>
+</div> 
+                <div style="margin-bottom: 0; margin-top: 2px; background-color: whitesmoke; width: 10px; height: 10px;" id="customerScrollPoint"></div>
+            </div>
+        </div>
+
+        <!--Customer Feedback Section-->
+            <div class="quoteBanner"><div style="min-width: 300px; font-style: italic; font-size: calc(17px + 0.5vw); font-family: monospace; width: 40vw; text-align: center; margin: auto; border-left: 10px solid rgb(134, 129, 73); border-right: 10px solid rgb(134, 129, 73); padding: 30px; padding-bottom: 5px;"><p>
+                "The conqueror is regarded with awe; the wise man commands our respect; but it is only the benevolent man that wins our affection."</p><p style="font-style: normal; font-weight: bolder;">— William Dean Howells</p></div></div> 
+
+        <!--Contact Me Section-->
+        <div class="footer-img" style="position: relative;">
+            <div class="drop-down-contact" id="customerContactBox" style="text-align: left; min-height: 500px; padding-top: 3vw;">
+                <p id="infoTitle" style="text-decoration: underline; font-size:calc(15px + 0.5vw); margin: 0; left: 25%; margin-top: 10px;">Contact Me<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11792665.96338846!2d-15.179532737296153!3d52.64193712564105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e1bd6c23f8c087%3A0x26f2f1561148e202!2sNormandy%2C%20France!5e0!3m2!1sen!2suk!4v1699652126328!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map-inside"></iframe></iframe></div>
+                <p id="contactText" style="margin-top: 0;  min-width: 50px;">I'm always open to receiving feedback, so if you'd like to contact me please send a scribe or walk :) I also use email and phone. I am currently based in Normandy, France but also have Contact Me Castles in England.</p>  
+                </p>
+                <ul style="margin-top: 30px; margin-left: 0; user-select: text; -webkit-user-select: text; margin-bottom: 40px;">
+                    <li style="font-size: calc(10px + 0.5vw);">Phone Number: <p id="number">1066 106 610</p><button type="button" value="number" onclick=copy(this) class="copy-button"><img src="copy.jpg"/></button></li>
+                    <li style="font-size: calc(10px + 0.5vw);">Email: <p id="email">theconqueror@normandy.co.fr</p><button type="button" value="email" onclick=copy(this) class="copy-button"><img src="copy.jpg"/></button></li>
+                </ul> 
+                <a href="formSubmission.html" target="_blank" rel="noopener"><button id="contactMeButton" type="button" class="button-57" role="button"><span class="text">Contact</span><span>Now</span></button></a>
+            </div>
+        </div>
+        <div id="footer-notice">Big W the Conqueror
+                <p style="margin-top: 0; font-size: 15px;">I hope you enjoyed discovering my work. Apologies if this is not displaying correctly, please consider using a different device or resizing the screen.</p>
+            </div>
+        </div>
+    </body>
+</html>
+

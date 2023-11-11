@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth">
+    <head style="margin: 0">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rmti-one-quote.css" />
+        <title>RMTi With Claire</title>
+        <link rel="icon" type="image/x-icon" href="RMIT-international.png">
+        <script>
+            function scrollToContactDetails() {
+                window.scrollTo(0, 3000);
+            }
+            function scrollToInfo() {
+                document.getElementById("infoScrollPoint").scrollIntoView();
+            }
+            function scrollToCustomerFeedback() {
+                document.getElementById("customerScrollPoint").scrollIntoView();
+            }
+            function scrollToTop() {
+                window.scrollTo(0, 0);
+            }
+            var myVar;
+
+            function load() {
+            myVar = setTimeout(showPage, 3500);
+             }
+
+            function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            }
+            function copy(tag) {
+                var copiedText = document.getElementById(tag.value);
+                navigator.clipboard.writeText(copiedText.innerHTML);
+                alert("Copied to Clipboard: " + copiedText.innerHTML);
+            }
+        </script>
+    </head>
+    <body onload="load()" style="margin: 0;">
+        <div id="mainContent">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <div id="resizeNotice">⚠  Warning!
+                <p style="margin-top: 0; font-size: 15px;">Webpage not designed for screen of this size. To avoid malfunctions, Please SHRINK Window.</p>
+            </div>
+            <!--Utility Bar-->
+            <div class="menu">
+                <div></div>
+                <a target="_blank" href="https://www.rhythmicmovement.org/" style="padding: 0.75vw; margin-right: 3vw;" class="menu-image">
+                    <img src="RMIT-international.png" alt="LOGO" 
+                    style="background-color: whitesmoke; min-height: 15px; height: 3.5vw; margin: 0; padding: 0;"></a>
+                <a class="menu-widget" onclick="scrollToTop()">Home</a>
+                <a class="menu-widget" onclick="scrollToInfo()">Information</a>
+                <a class="menu-widget" onclick="scrollToCustomerFeedback()">Customer Quote</a>
+                <a class="menu-widget" onclick="scrollToContactDetails()">Contact Me</a>
+                <!-- <a class="menu-widget"><img height="30px" src="ClaireRMTI.jpg" alt="idkrlly"></a> -->
+            </div>
+            
+            <!--Introduction Section-->
+        <div class="banner" style="position: relative;">
+            <div class="drop-down" style="text-align: left;" id="introBox">
+                <p style="text-decoration: underline; font-size:calc(20px + 0.4vw); margin: 0; margin-top: 10px; margin-left: 40px;">Welcome to RMTi
+                <p style="margin-top: 0.5vw; margin-left: 15px; margin-right: 15px;">Rhythmic Movement Training International is a collation of exercises that improve symmetry in the brain. Movements are designed to stimulate neural pathways, improving concentration, focus and organisation. It has also proven to be effective in enhancing emotional self-regulation, including reduction in anxiety as well as reducing dificulty in auditory and visual processing. RMTi is particularly successful in aiding development of children, strengthening balance and resilience.</p>  
+                </p>
+            </div>
+            <div class="flip-box" style="min-height: 200px; min-width: 250px;">
+                <div style="top: 50%;position:absolute; width: 10px; height: 10px;"id="infoScrollPoint"></div>
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 style="font-size:calc(18px + 1.5vw);">Did You Know?</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <p class="flip-box-back-heading">History of RMTi</p>
+                        <p class="flip-box-back-paragraph">RMTi is based on the practices of the Swedish photographer Kerstin Linde and her observations of infant's development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Banner -->
+        <div class="profileBanner">
+            <div>
+                <img src="ClaireHerself.jpg" style="height: calc(250px + 10vw); border: 10px solid #009900; transition-duration: 0.5;">
+                <p style="font-size: calc(15px + 0.3vw); font-family: monospace; font-weight: bold; line-height: 30px;">Hi, I'm Claire,<br/>looking forward to meeting you!<br/>Find out about my story bellow.</p>
+            </div>
+        </div>
+        <!--Further Information Section-->
+        <div class="background-image" id="infoSection">
+            <div class="drop-down-info" id="customerBox">
+                <p id="infoTitle" style="text-decoration: underline; font-size:calc(16px + 0.5vw); margin: 0; text-align: center;  left: 25%;">Information About RMTi</p>
+                <div style="margin-left: 25px; margin-right: 25px;">
+                <p style="margin-top: 0.5vw;"><br/><b>Who am I?</b><br><br/>
+My name’s Claire. I’m a mother and became desperate for help for one of my two children. He struggled with concentration, coordination, organisation, and couldn’t sit still in school. I was aware that this could be detrimental to both his education and development into an adolescent. Determined to do whatever I could to help my son, I searched for a solution. That’s when I found RMTi. After just two months, there were significant improvements in his behaviour, being much calmer and able to maintain concentration in school. I’ve never looked back. Fast forward ten years and I am a qualified RMTi Practitioner myself. I love helping children to improve their physical and mental wellbeing. I also use RMTi’s calming strategies in my “main” job as a teacher. I continue to see the benefits of RMTi among my family and friends, finding it of significant importance during the covid pandemic.</p>
+<p style="margin-top: 0.5vw; margin-left: 25px; margin-right: 25px;"></p><br><b style="margin-left: 30px;">More Benefits</b><br/><br/>
+As well as improving general well being and organisation, RMTi has also been shown to help with conditions such as: autism, ADHD and emotional imbalances without the need for additional medication. It’s a natural approach to strengthen children and adult's development.</p>
+<p style="margin-top: 0.5vw; margin-left: 25px; margin-right: 25px;"></p><br><b style="margin-left: 30px;">How does RMTi work?</b><br/><br/>
+Rhythmic Movement Training International (RMTi) is a neuro-development therapy. It improves synchronisation between the brain and body to create new, efficient neural pathways, strengthening myelination of neurons. It is a gentle, movement-based program bespoke to each client. The movements stimulate the brain, prompting learning of new reflex patterns and ultimately forms a calmer, more regulated way of being, helping patients feel better equipped to face the world.</p>
+</div> 
+                <div style="margin-bottom: 0; margin-top: 2px; background-color: whitesmoke; width: 10px; height: 10px;" id="customerScrollPoint"></div>
+            </div>
+        </div>
+
+        <!--Customer Feedback Section-->
+            <div class="quoteBanner"><div style="min-width: 300px; font-style: italic; font-size: calc(17px + 0.5vw); font-family: monospace; width: 40vw; text-align: center; margin: auto; border-left: 10px solid #009900; border-right: 10px solid #009900; padding: 30px; padding-bottom: 5px;"><p>
+                "We received treatment from Claire and we were thrilled with the results and how professional she was. Claire explained every step of the process and worked with my two children, age 14 and 11 years initially, and then my husband. The whole theory behind RMTi makes such sense and made it very easy to see how it was helping with regular assessment."</p><p style="font-style: normal; font-weight: bolder;">- Mrs C Francis, Woking</p></div></div> 
+
+        <!--Contact Me Section-->
+        <div class="footer-img" style="position: relative;">
+            <div class="drop-down-contact" id="customerContactBox" style="text-align: left; min-height: 500px; padding-top: 3vw; padding: 25px; padding-right: 30px;">
+                <p id="infoTitle" style="text-decoration: underline; font-size:calc(15px + 0.5vw); margin: 0; left: 25%; margin-top: 0;">Contact Me<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39900.50300954813!2d-0.585556611740634!3d51.31514527641412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d41816d163b7%3A0x20f9e2ba0648b374!2sWoking!5e0!3m2!1sen!2suk!4v1658386940177!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map-inside"></iframe></div>
+                <p id="contactText">If you want to find out more, or just would like to chat through how RMTi could work for you or someone you care about, please drop me an email or call. No worries if you decide this isn’t for you, but I’d love to discuss more about RMTi with you. :)</p>  
+                </p>
+                <ul style="margin-top: 30px; margin-left: 0; user-select: text; -webkit-user-select: text; margin-bottom: 40px;">
+                    <li style="font-size: calc(10px + 0.5vw);">Phone Number: <p id="number">07939 217 041</p><button type="button" value="number" onclick=copy(this) class="copy-button"><img src="copy.jpg"/></button></li>
+                    <li style="font-size: calc(10px + 0.5vw);">Email: <p id="email">clairedaviesrmt@gmail.com</p><button type="button" value="email" onclick=copy(this) class="copy-button"><img src="copy.jpg"/></button></li>
+                </ul> 
+                <a href="formSubmission.html" target="_blank" rel="noopener"><button id="contactMeButton" type="button" class="button-57" role="button"><span class="text">Contact</span><span>Now</span></button></a>
+            </div>
+        </div>
+        <div id="footer-notice">RMTi With Claire
+                <p style="margin-top: 0; font-size: 15px;">This webstite is designed to inform you about this practicioner. Apologies if it is not displaying correctly, please consider using a different device or resizing the screen.</p>
+            </div>
+        </div>
+    </body>
+</html>
